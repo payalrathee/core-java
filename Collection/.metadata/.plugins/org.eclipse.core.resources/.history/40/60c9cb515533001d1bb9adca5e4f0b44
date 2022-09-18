@@ -1,0 +1,54 @@
+package arrayLists;
+import java.util.*;
+import utilities.*;
+
+public class ArrayList1 {
+
+	public static void main(String[] args) {
+		//create and insert
+		ArrayList<String> a=new ArrayList<>();
+		a.add("a");
+		a.add("b");
+		a.add("c");
+		a.add("d");
+		a.add(1,"z");
+		
+		ArrayList<String> b=new ArrayList<>(a);
+		ArrayList<String> c=new ArrayList<>(10);
+		c.addAll(b);
+		c.add("zz");
+		c.add("yy");
+		ArrayList<String> d=new ArrayList<>();
+		d.add("abc");
+		d.addAll(1,a);
+		
+		//access
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		System.out.println(a.get(1));
+		
+		//traverse
+		for(String s:a)
+		{
+			System.out.print(s+" ");
+		}
+		System.out.println();
+		
+		//update
+		a.set(1, "xxx");
+		System.out.println(a);
+		
+		//remove
+		a.remove(0);
+		a.remove("xxx");
+		c.removeAll(b);
+		d.retainAll(a);
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		
+	}
+}

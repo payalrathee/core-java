@@ -1,0 +1,30 @@
+package arrayLists;
+import java.util.*;
+import utilities.*;
+
+public class ArrayList1 {
+
+	public static void main(String[] args) {
+		ArrayList<String> a=new ArrayList<>();
+		a.add("a");
+		a.add("b");
+		a.add("c");
+		a.add("d");
+		
+		
+		for(String s:a)
+		{
+			if(s.equals("a"))
+			{
+				a.remove(s);
+				break;
+			}
+			
+		}
+		System.out.println(a);
+		
+		ArrayList<String> b=new ArrayList<>();
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+package arrayLists;
+import java.util.*;
+import uitilities.*;
+
+public class ArrayLists {
+
+	public static void main(String[] args) {
+		ArrayList a=new ArrayList();
+		a.add(19);
+		a.add("payal");
+		a.add(new Student(1,"Harry"));
+		
+
+	}
+
+}

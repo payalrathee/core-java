@@ -1,0 +1,8 @@
+package utilities;
+
+public class def extends abc{
+	def()
+	{
+		super();
+	}
+}

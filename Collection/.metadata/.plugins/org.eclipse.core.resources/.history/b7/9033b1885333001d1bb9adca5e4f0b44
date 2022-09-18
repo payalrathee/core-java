@@ -1,0 +1,36 @@
+package arrayLists;
+import java.util.*;
+import utilities.*;
+
+public class ArrayList1 {
+
+	public static void main(String[] args) {
+		ArrayList<String> a=new ArrayList<>();
+		a.add("a");
+		a.add("b");
+		a.add("c");
+		a.add("d");
+		a.add(1,"z");
+		
+		a.set(1, "payal");
+		
+		System.out.println(a);
+		System.out.println(a.get(1));
+		
+		for(String s:a)
+		{
+			if(s.equals("a"))
+			{
+				a.remove(s);
+				break;
+			}
+			
+		}
+		System.out.println(a);
+		
+		ArrayList<String> b=new ArrayList<>();
+		 a.remove(a.get(0));
+		 System.out.println(a);
+		
+	}
+}

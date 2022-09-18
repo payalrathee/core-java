@@ -1,0 +1,39 @@
+package arrayLists;
+import java.util.*;
+import utilities.*;
+
+public class ArrayLists {
+
+	public static void main(String[] args) {
+		ArrayList a=new ArrayList();
+		a.add(19);
+		a.add("payal");
+		a.add(new Student(1,"Harry"));
+		a.add(new Employee(101,"Bob"));
+		
+		ArrayList b=new ArrayList();
+		b.addAll(1,a);
+		b.add('f');
+		
+		System.out.println(a);
+		System.out.println(b);
+		
+		for(Object o:a)
+		{
+			if(o instanceof Student)
+			{
+				Student s=(Student)o;
+				System.out.println(s.roll+" "+s.name);
+			}
+			else if(o instanceof Employee)
+			{
+				Employee e=(Employee)o;
+				System.out.println(e.id+" "+e.name);
+			}
+			else 
+				System.out.println(o);
+		}
+
+	}
+
+}

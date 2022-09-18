@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mysqlDriver">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/MySQL/Connector J 8.0/mysqlDriver" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
