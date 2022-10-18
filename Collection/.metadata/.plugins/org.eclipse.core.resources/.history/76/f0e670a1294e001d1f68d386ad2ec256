@@ -1,0 +1,15 @@
+package sorting;
+import java.util.*;
+
+public class ComparableSorting {
+	public static void main(String... args)
+	{
+		ArrayList<String> a=new ArrayList<>();
+		a.add("a");
+		a.add("dhd");
+		a.add("djd");
+		Collections.sort(a);
+		System.out.println(a);
+	}
+
+}

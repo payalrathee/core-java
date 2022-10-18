@@ -1,0 +1,29 @@
+package sorting;
+import java.util.*;
+import utilities.Student;
+
+public class ComparatorSorting {
+	public static void main(String... args)
+	{
+		ArrayList<Student> a=new ArrayList<>();
+		a.add(new Student(2,"alisha"));
+		a.add(new Student(1,"daman"));
+		a.add(new Student(3,"richa"));
+		
+		Collections.sort(a,new Comparator<Student>() {
+
+			@Override
+			public int compare(Student s1, Student s2) {
+				if(s1.roll==s2.roll)
+					return 0;
+				else if(s1.roll>s2.roll)
+					return 1;
+				else
+					return -1;
+			}
+			
+		});
+		System.out.println(a);
+	}
+
+}
